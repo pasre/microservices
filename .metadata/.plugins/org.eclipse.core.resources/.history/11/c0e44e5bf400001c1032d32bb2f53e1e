@@ -1,0 +1,21 @@
+package com.formacionbdi.springboot.app.oauth.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+import com.formacionbdi.springboot.app.commons.models.entity.Usuario;
+import com.formacionbdi.springboot.app.oauth.clients.UsuarioFeignClient;
+
+public class UsuarioService implements UserDetailsService {
+
+	@Autowired
+	private UsuarioFeignClient usuarioFeignClient;
+
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		Usuario usuario = usuarioFeignClient.findByUsername(username);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.formacionbdi.springboot.app.zuulo.auth;
+
+public class ResourceServerConfig {
+
+}

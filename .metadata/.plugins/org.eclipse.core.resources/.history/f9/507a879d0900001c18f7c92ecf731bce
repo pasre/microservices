@@ -1,0 +1,9 @@
+INSERT INTO usuarios (username, password, enabled, nombre, apellido, email) VALUES ('pablo', '12345', 1, 'Pablo', 'Sala', 'pablo.sala@gmail.com');
+INSERT INTO usuarios (username, password, enabled, nombre, apellido, email) VALUES ('admin', 'admin', 1, 'Admin', '', 'admin@gmail.com');
+
+INSERT INTO roles (nombre) values ('ROL_USER');
+INSERT INTO roles (nombre) values ('ROL_ADMIN');
+
+INSERT INTO usuarios_roles (usuario_id, roles_id) values (1, 1);
+INSERT INTO usuarios_roles (usuario_id, roles_id) values (1, 2);
+INSERT INTO usuarios_roles (usuario_id, roles_id) values (1, 1);

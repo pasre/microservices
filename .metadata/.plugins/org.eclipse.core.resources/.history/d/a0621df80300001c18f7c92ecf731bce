@@ -1,0 +1,14 @@
+package com.formacionbdi.springboot.app.usuarios.models.entity;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "roles")
+public class Rol implements Serializable {
+
+	private static final long serialVersionUID = 4002221912401133094L;
+
+}

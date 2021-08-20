@@ -1,0 +1,5 @@
+package com.formacionbdi.springboot.app.usuarios;
+
+public class RepositoryConfig {
+
+}
